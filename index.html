@@ -1,0 +1,38 @@
+---
+---
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    {%- include header.html -%}
+    <div class="gallary">
+      <h1>{{ site.name }}</h1>
+      {% for section in site.data %}
+      {%- assign name = section[1].name -%}
+      {%- assign photos = section[1].list -%}
+        <section class="section">
+          <h2 href="#{{ name }}">{{ name }}</h2>
+          <ul class="photos">
+            {%- for photo in photos -%}
+              <!-- {{photo}} -->
+              <li class="photo">
+                <figure class="photo-figure">
+                  <a class="photo-a" itemprop="{{ photo.path }}" 
+                    href="{{ photo.path }}"
+                    style="background-image: url('{{ photo.compressed_path }}');"
+                    data-size="{{ photo.width }}x{{ photo.height }}">
+                    <img class="photo-img" itemprop="thumbnail" src="{{ photo.compressed_path }}"/>
+                  </a>
+                </figure>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </section>
+      {% endfor %}
+    </div>
+    {%- include footer.html -%}
+    {%- include swipe.html -%}
+  </body>
+</html>

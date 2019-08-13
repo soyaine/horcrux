@@ -1,0 +1,35 @@
+@import "base";
+
+html {
+  background-color: $background;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+}
+h1 {
+  color: $title;
+}
+h2 {
+  color: $subtitle;
+}
+figure {
+  margin: 0;
+}
+footer {
+  bottom: 0;
+  color: $text;
+  text-align: center;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: $text;
+  &:hover {
+    color: $link;
+  }
+}
+
+@import "gallary";
+@import "photoswipe";
+@import "pswp-default-skin";

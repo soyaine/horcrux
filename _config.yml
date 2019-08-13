@@ -1,0 +1,7 @@
+name: Soyaine
+
+column: 3
+
+sass:
+  sass_dir: _sass
+  style: compressed

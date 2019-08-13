@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "list": [
+    {
+      "height": 6000,
+      "compressed_path": "./photos/Sky in August/sky-04.min.jpg",
+      "width": 4000,
+      "compressed": true,
+      "placeholder_path": "./photos/Sky in August/sky-04.placeholder.jpg",
+      "path": "./photos/Sky in August/sky-04.jpg"
+    },
+    {
+      "height": 3889,
+      "compressed_path": "./photos/Sky in August/sky-05.min.jpg",
+      "width": 5833,
+      "compressed": true,
+      "placeholder_path": "./photos/Sky in August/sky-05.placeholder.jpg",
+      "path": "./photos/Sky in August/sky-05.jpg"
+    }
+  ]
+}

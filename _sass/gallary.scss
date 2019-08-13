@@ -1,0 +1,39 @@
+@import "base";
+
+.gallary {
+  max-width: 955px;
+  margin: 20px auto;
+}
+.photos {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.photo {
+  flex: 0 0 calc(100% / 3 - 20px);
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: $surface;
+  margin-bottom: 40px;
+}
+.photo-figure {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.photo-a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.photo-img {
+  visibility: hidden;
+}
