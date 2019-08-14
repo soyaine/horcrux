@@ -14,19 +14,17 @@
       {%- assign photos = section[1].list -%}
         <section class="section">
           <h2 href="#{{ name }}">{{ name }}</h2>
-          <ul class="photos">
+          <div class="photos" itemscope>
             {%- for photo in photos -%}
               <!-- {{photo}} -->
-              <li class="photo">
-                <figure class="photo-figure">
-                  <a class="photo-a" itemprop="{{ photo.path }}" 
-                    href="{{ photo.path }}"
-                    style="background-image: url('{{ photo.compressed_path }}');"
-                    data-size="{{ photo.width }}x{{ photo.height }}">
-                    <img class="photo-img" itemprop="thumbnail" src="{{ photo.compressed_path }}"/>
-                  </a>
-                </figure>
-              </li>
+              <figure class="photo-figure" itemscope>
+                <a class="photo-a" itemprop="{{ photo.path }}" 
+                  href="{{ photo.path }}"
+                  msrc="{{ photo.compressed_path }}"
+                  data-size="{{ photo.width }}x{{ photo.height }}">
+                  <img class="photo-img" itemprop="thumbnail" src="{{ photo.compressed_path }}"/>
+                </a>
+              </figure>
             {%- endfor -%}
           </ul>
         </section>
