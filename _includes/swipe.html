@@ -136,7 +136,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
           return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
       });
 
-      console.log(eTarget);
 
       if(!clickedListItem) {
           return;
@@ -162,8 +161,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
           }
           nodeIndex++;
       }
-
-
 
       if(index >= 0) {
           // open PhotoSwipe if valid index found
@@ -207,7 +204,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
           items;
 
       items = parseThumbnailElements(galleryElement);
-      console.log(galleryElement);
 
       // define options (if needed)
       options = {
@@ -222,7 +218,16 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                   rect = thumbnail.getBoundingClientRect(); 
 
               return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-          }
+          },
+
+          zoomEl: false,
+          showHideOpacity: true,
+          maxSpreadZoom: 1,
+          getDoubleTapZoom: function(isMouseClick, item) {
+            return item.initialZoomLevel;
+          },
+          pinchToClose: false,
+          closeElClasses: ['img', 'item', 'caption', 'zoom-wrap', 'ui', 'top-bar']
 
       };
 

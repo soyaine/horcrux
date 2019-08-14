@@ -51,9 +51,10 @@
 
 .pswp--zoom-allowed .pswp__img {
 	/* autoprefixer: off */
-	cursor: -webkit-zoom-in;
-	cursor: -moz-zoom-in;
-	cursor: zoom-in;
+	// cursor: -webkit-zoom-in;
+	// cursor: -moz-zoom-in;
+  // cursor: zoom-in;
+  cursor: default !important;
 }
 
 .pswp--zoomed-in .pswp__img {
@@ -118,14 +119,14 @@
 }
 
 .pswp__zoom-wrap {
-	position: absolute;
-	width: 100%;
-	-webkit-transform-origin: left top;
-	-moz-transform-origin: left top;
-	-ms-transform-origin: left top;
-	transform-origin: left top;
-	/* for open/close transition */
-	transition: transform $pswp__show-hide-transition-duration cubic-bezier(.4,0,.22,1);
+  position: absolute;
+  width: 100%;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  /*foropen/closetransition*/
+  transition: transform $pswp__show-hide-transition-duration cubic-bezier(.4,0,.22,1);
 }
 
 .pswp__bg {
