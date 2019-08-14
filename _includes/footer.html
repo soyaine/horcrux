@@ -1,8 +1,10 @@
 <footer>
-  <a>
-    View more in Instagram
-  </a>
-  <div style="font-size: small;">
+  {%- if site.instagram -%}
+    <a class="footer-item" target="blank"" href="https://www.instagram.com/{{ site.instagram }}/">
+      View more in Instagram
+    </a>
+  {%- endif -%}
+  <div class="footer-item">
     Power by <a href="https://github.com/soyaine/horcrux">Horcrux</a>
   </div>
 </footer>

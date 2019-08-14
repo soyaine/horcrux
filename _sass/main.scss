@@ -3,15 +3,24 @@
 html {
   background-color: $background;
   overflow-x: hidden;
+  font-family: 'Lato', 'Helvetica', 'Verdana', sans-serif;
 }
 body {
   margin: 0;
 }
 h1 {
+  font-size: 1.8em;
   color: $title;
 }
 h2 {
+  font-size: 1em;
+  font-weight: 400;
   color: $subtitle;
+  margin-bottom: 1.5em;
+}
+h1, h2, footer {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 figure {
   margin: 0;
@@ -21,6 +30,12 @@ footer {
   color: $text;
   text-align: center;
   width: 100%;
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+.footer-item {
+  display: block;
+  margin-bottom: .8em;
 }
 a {
   text-decoration: none;
@@ -30,6 +45,6 @@ a {
   }
 }
 
-@import "gallary";
-@import "photoswipe";
 @import "pswp-default-skin";
+@import "photoswipe";
+@import "gallary";

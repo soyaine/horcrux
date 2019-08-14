@@ -3,13 +3,20 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+        --column: {{ site.column }};
+        --column-small: {{ site.small_screen_column }};
+      }
+    </style>
     <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
   </head>
   <body>
     {%- include header.html -%}
     <div class="gallary">
       <h1>{{ site.name }}</h1>
-      {% for section in site.data %}
+      {%- for section in site.data -%}
       {%- assign name = section[1].name -%}
       {%- assign photos = section[1].list -%}
         <section class="section">
@@ -28,7 +35,7 @@
             {%- endfor -%}
           </ul>
         </section>
-      {% endfor %}
+      {%- endfor -%}
     </div>
     {%- include footer.html -%}
     {%- include swipe.html -%}

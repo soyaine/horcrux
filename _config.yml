@@ -1,6 +1,9 @@
 name: Soyaine
 
 column: 3
+small_screen_column: 2
+
+instagram: soyaine
 
 sass:
   sass_dir: _sass

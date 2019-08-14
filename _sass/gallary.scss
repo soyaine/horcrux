@@ -11,7 +11,7 @@
   align-content: space-around;
 }
 .photo-figure {
-  flex: 0 0 calc(100% / 3 - 20px);
+  flex: 0 0 calc(100% / var(--column) - 20px);
   padding: 10px;
   box-sizing: border-box;
   background-color: $surface;
@@ -38,4 +38,39 @@
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+
+// redefine the style of photoswipe
+button.pswp__button.pswp__button--share {
+  display: none;
+}
+
+@media screen and (max-width: $layout-medium) {
+  .gallary {
+    margin: 20px 40px;
+  }
+}
+
+@media screen and (max-width: $layout-small) {
+  .gallary {
+    margin: 20px 30px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+  .photo-figure {
+    flex: 0 0 calc(100% / var(--column-small) - 20px);
+  }
+  .pswp__counter {
+    font-size: larger;
+  }
+
+  button.pswp__button.pswp__button--fs, 
+  button.pswp__button.pswp__button--arrow-left, 
+  button.pswp__button.pswp__button--arrow-right {
+    display: none;
+  }
 }
