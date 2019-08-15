@@ -2,7 +2,7 @@
 
 .gallary {
   max-width: 955px;
-  margin: 20px auto;
+  margin: 7em auto;
 }
 .photos {
   display: flex;
@@ -47,13 +47,13 @@ button.pswp__button.pswp__button--share {
 
 @media screen and (max-width: $layout-medium) {
   .gallary {
-    margin: 20px 40px;
+    margin: 5em 40px;
   }
 }
 
 @media screen and (max-width: $layout-small) {
   .gallary {
-    margin: 20px 30px;
+    margin: 4em 6px;
   }
   h1 {
     font-size: 1.5em;
@@ -61,8 +61,12 @@ button.pswp__button.pswp__button--share {
   h2 {
     font-size: 0.9em;
   }
+  h1, h2 {
+    margin-left: 12px;
+  }
   .photo-figure {
-    flex: 0 0 calc(100% / var(--column-small) - 20px);
+    flex: 0 0 calc(100% / var(--column-small) - 3px);
+    margin-bottom: 6px;
   }
   .pswp__counter {
     font-size: larger;
