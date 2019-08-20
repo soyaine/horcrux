@@ -1,7 +1,16 @@
 name: Soyaine
 
+frame_padding: 10px
+
 column: 3
-small_screen_column: 2
+column_gap: 30px
+row_gap: 30px
+
+small_screen:
+  column: 2
+  column_gap: 10px
+  row_gap: 10px
+
 
 instagram: 
 

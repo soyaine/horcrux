@@ -7,7 +7,13 @@
     <style>
       :root {
         --column: {{ site.column }};
-        --column-small: {{ site.small_screen_column }};
+        --column-gap: {{ site.column_gap }};
+        --row-gap: {{ site.row_gap }};
+        --frame-padding: {{ site.frame_padding }};
+
+        --column-small: {{ site.small_screen.column }};
+        --column-gap-small: {{ site.small_screen.column_gap }};
+        --row-gap-smal: {{ site.small_screen.row_gap }};
       }
     </style>
     <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
