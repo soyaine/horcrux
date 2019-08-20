@@ -4,6 +4,9 @@
   max-width: 955px;
   margin: 7em auto;
 }
+.section {
+  margin-top: 5em;
+}
 .photos {
   display: grid;
   grid-template: 1fr / repeat(var(--column, 3), 1fr);
