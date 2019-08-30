@@ -2,4 +2,11 @@
 
 SCRIPT_PATH=$(dirname "$0")
 
-python3 $SCRIPT_PATH/scripts/main.py
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv activate p
+pyenv version
+pip install pyyaml
+pip install Pillow
+
+python $SCRIPT_PATH/scripts/main.py
