@@ -2,10 +2,8 @@
 
 SCRIPT_PATH=$(dirname "$0")
 
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-pyenv activate p
-pyenv version
+python3 -m venv venv    
+source venv/bin/activate  
 pip install pyyaml
 pip install Pillow
 
