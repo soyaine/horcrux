@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Horcrux",
+    "type": "photos",
+    "parents": [],
+    "list": [
+      {
+        "type": "photo",
+        "width": 1798,
+        "height": 1798,
+        "path": "./photos/02.jpg",
+        "min_path": "./photos/02.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3198,
+        "height": 1798,
+        "path": "./photos/05.jpg",
+        "min_path": "./photos/05.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 1007,
+        "height": 1024,
+        "path": "./photos/1.jpg",
+        "min_path": "./photos/1.min.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Blue",
+    "type": "photos",
+    "parents": [
+      "Blue"
+    ],
+    "list": [
+      {
+        "type": "photo",
+        "width": 3198,
+        "height": 1798,
+        "path": "./photos/Blue/07.jpg",
+        "min_path": "./photos/Blue/07.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3196,
+        "height": 1798,
+        "path": "./photos/Blue/08.jpg",
+        "min_path": "./photos/Blue/08.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3196,
+        "height": 1798,
+        "path": "./photos/Blue/09.jpg",
+        "min_path": "./photos/Blue/09.min.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Dark",
+    "type": "photos",
+    "parents": [
+      "Duo",
+      "Dark"
+    ],
+    "list": [
+      {
+        "type": "photo",
+        "width": 3198,
+        "height": 1798,
+        "path": "./photos/Duo/Dark/04.jpg",
+        "min_path": "./photos/Duo/Dark/04.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3198,
+        "height": 1798,
+        "path": "./photos/Duo/Dark/05.jpg",
+        "min_path": "./photos/Duo/Dark/05.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 2698,
+        "height": 1799,
+        "path": "./photos/Duo/Dark/06.jpg",
+        "min_path": "./photos/Duo/Dark/06.min.jpg"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "type": "photo",
+    "width": 3198,
+    "height": 1798,
+    "path": "./photos/Blue/07.jpg",
+    "min_path": "./photos/Blue/07.min.jpg"
+  },
+  {
+    "type": "photo",
+    "width": 3196,
+    "height": 1798,
+    "path": "./photos/Blue/08.jpg",
+    "min_path": "./photos/Blue/08.min.jpg"
+  },
+  {
+    "type": "photo",
+    "width": 3196,
+    "height": 1798,
+    "path": "./photos/Blue/09.jpg",
+    "min_path": "./photos/Blue/09.min.jpg"
+  }
+]
