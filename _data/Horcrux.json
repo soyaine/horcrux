@@ -3,58 +3,43 @@
   "type": "album",
   "root": 0,
   "parents": [],
-  "list": [
-    {
-      "type": "photo",
-      "width": 1798,
-      "height": 1798,
-      "path": "./photos/02.jpg",
-      "min_path": "./photos/02.min.jpg"
-    },
-    {
-      "type": "photo",
-      "width": 3198,
-      "height": 1798,
-      "path": "./photos/05.jpg",
-      "min_path": "./photos/05.min.jpg"
-    },
-    {
-      "type": "photo",
-      "width": 1007,
-      "height": 1024,
-      "path": "./photos/1.jpg",
-      "min_path": "./photos/1.min.jpg"
-    },
-    {
-      "name": "Blue",
-      "type": "album",
-      "root": 1,
-      "parents": [
-        "Blue"
-      ],
-      "conf_path": "./_data/albums/Blue.json",
-      "no_sub_album": true
-    },
-    {
-      "name": "Duo",
-      "type": "album",
-      "root": 1,
-      "parents": [
-        "Duo"
-      ],
-      "list": [
-        {
-          "name": "Dark",
-          "type": "album",
-          "root": 2,
-          "parents": [
-            "Duo",
-            "Dark"
-          ],
-          "conf_path": "./_data/albums/Duo-Dark.json",
-          "no_sub_album": true
-        }
-      ]
+  "items": {
+    "order": [
+      "Duo",
+      "Mey",
+      "Dark"
+    ],
+    "dict": {
+      "Mey": {
+        "name": "Mey",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "Mey"
+        ],
+        "path": "./_data/albums/Mey.json",
+        "no_sub_album": true
+      },
+      "Duo": {
+        "name": "Duo",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "Duo"
+        ],
+        "path": "./_data/albums/Duo.json",
+        "no_sub_album": true
+      },
+      "Dark": {
+        "name": "Dark",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "Dark"
+        ],
+        "path": "./_data/albums/Dark.json",
+        "no_sub_album": true
+      }
     }
-  ]
+  }
 }

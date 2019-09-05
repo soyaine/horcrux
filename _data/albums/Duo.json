@@ -1,0 +1,30 @@
+{
+  "order": [
+    "09.jpg",
+    "08.jpg",
+    "07.jpg"
+  ],
+  "dict": {
+    "09.jpg": {
+      "type": "photo",
+      "width": 3196,
+      "height": 1798,
+      "path": "./photos/Duo/09.jpg",
+      "min_path": "./photos/Duo/09.min.jpg"
+    },
+    "08.jpg": {
+      "type": "photo",
+      "width": 3196,
+      "height": 1798,
+      "path": "./photos/Duo/08.jpg",
+      "min_path": "./photos/Duo/08.min.jpg"
+    },
+    "07.jpg": {
+      "type": "photo",
+      "width": 3198,
+      "height": 1798,
+      "path": "./photos/Duo/07.jpg",
+      "min_path": "./photos/Duo/07.min.jpg"
+    }
+  }
+}
