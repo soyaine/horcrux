@@ -6,5 +6,18 @@ $subtitle: #868686;
 $text: #C8C8C8;
 $link: #98A3AA;
 
+$heading1: $subtitle;
+$heading2: #8e8e8e;
+$heading3: #9e9e9e;
+$heading4: #a4a4a4;
+$heading5: #bdbdbd;
+
 $layout-small: 768px;
 $layout-medium: 1024px;
+
+$font-h1: 3em;
+
+@mixin headline($size, $color) {
+  font-size: $size;
+  color: $color;
+}

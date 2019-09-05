@@ -11,6 +11,23 @@ small_screen:
   column_gap: 10px
   row_gap: 10px
 
+process:
+  keep_order: True
+  album:
+    sort_by_time: True # False: sort by filename
+    order_by: create # access, modify
+    reverse: True
+  photo:
+    sort_by_time: False
+    order_by: modify
+    reverse: True
+    min_width: 600
+    watermark:
+      thumbnail: False
+      original: True
+      fontsize: 40
+      fontfamily: Eczar-Medium.ttf
+      rotate: 0
 
 instagram: 
 

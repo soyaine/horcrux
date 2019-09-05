@@ -35,26 +35,8 @@
     {%- include header.html -%}
     <div class="gallary">
       <h1>{{ site.name }}</h1>
-      {%- for section in site.data -%}
-      {%- assign name = section[1].name -%}
-      {%- assign photos = section[1].list -%}
-        <section class="section">
-          <h2 href="#{{ name }}">{{ name }}</h2>
-          <div class="photos" itemscope>
-            {%- for photo in photos -%}
-              <!-- {{photo}} -->
-              <figure class="photo-figure" itemscope>
-                <a class="photo-a" itemprop="{{ photo.path }}" 
-                  href="{{ photo.path }}"
-                  msrc="{{ photo.compressed_path }}"
-                  data-size="{{ photo.width }}x{{ photo.height }}">
-                  <img class="photo-img" itemprop="thumbnail" src="{{ photo.compressed_path }}"/>
-                </a>
-              </figure>
-            {%- endfor -%}
-          </ul>
-        </section>
-      {%- endfor -%}
+      {%- assign albums = site.data.config -%}
+      {%- include album.html -%}
     </div>
     {%- include footer.html -%}
     {%- include swipe.html -%}

@@ -1,0 +1,45 @@
+{
+  "name": "Horcrux",
+  "type": "album",
+  "root": 0,
+  "parents": [],
+  "items": {
+    "order": [
+      "Duo",
+      "Mey",
+      "Dark"
+    ],
+    "dict": {
+      "Mey": {
+        "name": "Mey",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "Mey"
+        ],
+        "path": "./_data/albums/Mey.json",
+        "no_sub_album": true
+      },
+      "Duo": {
+        "name": "Duo",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "Duo"
+        ],
+        "path": "./_data/albums/Duo.json",
+        "no_sub_album": true
+      },
+      "Dark": {
+        "name": "Dark",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "Dark"
+        ],
+        "path": "./_data/albums/Dark.json",
+        "no_sub_album": true
+      }
+    }
+  }
+}

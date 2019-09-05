@@ -14,14 +14,16 @@ h1 {
   margin-bottom: 2em;
 }
 h2 {
-  font-size: 1em;
   font-weight: 400;
-  color: $subtitle;
-  margin-bottom: 1.5em;
+  color: $heading5;
+
+  strong {
+    color: $subtitle;
+  }
 }
 h1, h2, footer {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
 }
 figure {
   margin: 0;
