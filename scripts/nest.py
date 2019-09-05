@@ -20,8 +20,15 @@ class Nest():
         
         self.resources.append(album)
     
+    def convert_child_items(self, items):
+        items_dict = items['dict']
+        items_order = items['order']
+        child_list = [items_dict.get(k) for k in items_order if k in items_dict]
+        return child_list
+    
     def nest_photos(self, album, list_path):
-        photos = self.read(list_path)
+        items = self.read(list_path)
+        photos = self.convert_child_items(items)
         # self.append(album=album)
         self.append_album(album=album, photos=photos)
         
@@ -29,10 +36,10 @@ class Nest():
         album = album or self.read(album_path)
         if album['type'] == 'album':
             if album.get('no_sub_album'):
-                list_path = album['conf_path']
+                list_path = album['path']
                 self.nest_photos(album, list_path)
             else:
-                album_list = album.pop('list', None)
+                album_list = self.convert_child_items(album['items'])
                 alone_photos = list(filter(lambda i: i['type'] == 'photo', album_list))
                 if alone_photos:
                     self.append_album(album=album, photos=alone_photos)

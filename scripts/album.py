@@ -5,7 +5,8 @@ class Album():
     def __init__(self, path, name, root):
         self.path = path
         self.name = name
-        self.list = []
+        self.items_order = []
+        self.items_dict = {}
         self.root = root or 0
     
     def sort_dirs(self, dirs, type):
@@ -55,25 +56,33 @@ class Album():
             photo = Photo(path)
             photo_conf = photo.format()
             if photo_conf:
-                self.list.append(photo_conf)
+                self.items_order.append(path.name)
+                self.items_dict[path.name] = photo_conf
         
         for path in album_list:
             sub_album = Album(path, path.name, self.root + 1)
-            self.list.append(sub_album.format())
+            self.items_order.append(path.name)
+            self.items_dict[path.name] = sub_album.format()
             has_child_album = True
+        
+        child_items = {
+            'order': self.items_order,
+            'dict': self.items_dict
+        }
 
         if has_child_album:
             return {
               **result,
-              'list': self.list
+              'items': child_items
             }
         else:
             # write list to album config file
             album_path = conf.ALBUMS_PATH.joinpath('-'.join(album_levels) + '.json')
-            conf.write_json(album_path, self.list)
+            print('Write the album config to', album_path)
+            conf.write_json(album_path, child_items)
 
             return {
               **result,
-              'conf_path': './' + str(album_path.relative_to(conf.REPO_DIR)),
+              'path': './' + str(album_path.relative_to(conf.REPO_DIR)),
               'no_sub_album': True
             }

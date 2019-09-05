@@ -28,14 +28,49 @@ SORT_PHOTOS_BY_TIME = False
 REVERSE_PHOTOS_ORDER = True
 ORDER_PHOTOS_BY_LAST_DO = 'access'
 
+KEEP_ORDER = False
+
 Path.mkdir(ALBUMS_PATH, exist_ok=True)
 
+def merge_list(list_keep_order, list_new):
+    print('Merge old order:', list_keep_order)
+    print('The new order is:', list_new)
+    right = None
+    left = None
+    for item in list_keep_order:
+        idx = list_new.index(item)
+        if left is None or idx < left:
+            left = idx
+        if right is None or idx > right:
+            right = idx
+    
+    if (right - left + 1) == len(list_keep_order):
+        list_new[left:right + 1] = list_keep_order
+    
+    print('Merged order:', list_new)
+    return list_new
+    
+def merge_json(path, data):
+    try:
+        with open(path, 'r') as f:
+            if f:
+                original_config = json.load(f)
+                if 'items' in original_config and 'items' in data:
+                    data['items']['order'] = merge_list(original_config['items']['order'], data['items']['order'])
+                if 'order' in original_config:
+                    data['order'] = merge_list(original_config['order'], data['order'])
+    except:
+        pass
+    return data
+
 def write_json(path, data):
+    if KEEP_ORDER:
+        data = merge_json(path, data)
     with open(path, 'w') as f:
         f.write(json.dumps(data, indent=2, separators=(',', ': ')))
 
 with open(CONF_YAML_PATH, 'r') as config:
-    site_conf = yaml.load(config)
+    site_conf = yaml.load(config, Loader=yaml.FullLoader)
     copyright = '@' + site_conf['name']
     
     process = site_conf['process']
@@ -59,3 +94,5 @@ with open(CONF_YAML_PATH, 'r') as config:
         SORT_PHOTOS_BY_TIME = photo_conf.get('sort_by_time', SORT_PHOTOS_BY_TIME)
         REVERSE_PHOTOS_ORDER = photo_conf.get('reverse', REVERSE_PHOTOS_ORDER)
         ORDER_PHOTOS_BY_LAST_DO = photo_conf.get('order_by', ORDER_PHOTOS_BY_LAST_DO)
+
+        KEEP_ORDER = process.get('keep_order', KEEP_ORDER)

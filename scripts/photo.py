@@ -27,6 +27,7 @@ class Photo():
             return None
         
         if not self.has_min:
+            print(f'Compressing the {relative_path}')
             if conf.SIGN_ORIGINAL:
                 signed_image = self.mark_image(self.pil_image, conf.fontsize)
                 self.save_image(signed_image, self.path)
@@ -46,7 +47,6 @@ class Photo():
                 self.save_image(min_image, self.min_path)
 
         relative_path = str(self.path.relative_to(conf.REPO_DIR))
-        print(f'Compressing the {relative_path}')
 
         # return basic info
         return {

@@ -8,4 +8,4 @@ source venv/bin/activate
 # pip install Pillow
 echo $VIRTUAL_ENV
 
-python $SCRIPT_PATH/scripts/main.py
+python $SCRIPT_PATH/scripts/nest.py
