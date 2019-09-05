@@ -6,7 +6,9 @@ class Nest():
         self.resources = []
 
     def read(self, path):
-        with open(path, 'r') as f:
+        print('read', conf.DIR_PATH.joinpath(path))
+        abs_path = conf.DIR_PATH.joinpath(path)
+        with open(abs_path, 'r') as f:
             return json.load(f)
     
     def append_album(self, album=None, photos=None):
@@ -33,7 +35,6 @@ class Nest():
         self.append_album(album=album, photos=photos)
         
     def nest_album(self, album):
-        album = album or self.read(album_path)
         if album['type'] == 'album':
             if album.get('no_sub_album'):
                 list_path = album['path']
