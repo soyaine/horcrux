@@ -12,7 +12,7 @@ small_screen:
   row_gap: 10px
 
 process:
-  keep_order: False
+  keep_order: True
   album:
     sort_by_time: True # False: sort by filename
     order_by: create # access, modify
