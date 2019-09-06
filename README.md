@@ -1,5 +1,7 @@
 # Horcrux
-Generate your own photograph gallery easily.
+Generate your own online photograph gallery easily.
+
+![demo](https://raw.githubusercontent.com/soyaine/horcrux/readme/assets/imxie-demo.png)
 
 ## Features
 - Simple web page style
