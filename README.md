@@ -38,9 +38,18 @@ Here is a live demo: [https://soyaine.github.io/horcrux/](https://soyaine.github
     instagram: your_ins_account
     ```
 3. Replace the folders in the `./photos/` directory with your own photos, each folder means an album. The folder name will shown as the headline of each album.
-
-4. Double click the `setup.command`, which will generate config json in `_data/` folder.
-5. Run and greet your gallery in `localhost:4001`
+    ```
+    photos
+    ├── Duo
+    │   ├── 07.jpg
+    │   ├── 08.jpg
+    │   ├── 09.jpg
+    └── Mey
+        ├── 02.jpg
+        └── 1.jpg
+    ```
+4. Double click the `setup.command`, which will generate thumbnails of your photos, and watermark original photos with your name set in config. Then the album info will be converted to some json in `_data/` folder.
+5. Run and greet your gallery in `http://localhost:4001`
     ```
     $ jekyll serve --watch
     ```
