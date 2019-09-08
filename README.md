@@ -4,11 +4,12 @@ Generate your own online photograph gallery easily.
 ![demo](https://raw.githubusercontent.com/soyaine/horcrux/readme/assets/imxie-demo.png)
 
 ## Features
-- Simple but beautiful UI
-- Auto watermark your photos
-- Auto generate thumbnails for better load speed
-- Sort photos by time, ma as you like, and keep it when you add new photos
-- Keep the order when you add new photos
+- Simple but beautiful UI.
+- Auto watermark your photos.
+- Auto generate thumbnails for better load speed.
+- Sort photos by time, modify as you like, and keep it when you add new photos.
+- Keep the order when you put new photos in.
+- Based on Jekyll and GitHub Pages.
 
 ## Demo
 Here is a live demo: [https://soyaine.github.io/horcrux/](https://soyaine.github.io/horcrux/)
@@ -37,11 +38,11 @@ $ python3 -V
 Change the config in file `_config.yml`, **especially the name**, which will shown as the site header and the watermark text in your photos.
 
 ``` yml
-name: Soyaine
-instagram: your_ins_account
+name: Horcrux
+instagram: your_ins_account_id
 ```
 
-Remove all resources under `./photos/`, than create folder in it, the folder name will shown as headline of a group of photos. Copy some photos into it. 
+Remove all resources under `./photos/`, then create folder in it, the folder name will shown as headline of a group of photos. Copy some photos into it. 
 ```bash
 photos
 ├── Duo
@@ -52,7 +53,8 @@ photos
     ├── 02.jpg
     └── 1.jpg
 ```
-> **⚠️Note** 
+> **⚠️NOTE** 
+> 
 > Please always keep your own original photo files in other place, because the watermark will change the original one. 
 > 
 > When you first try this, just put several photos in, to see wheather you like the watermark effect or not.
@@ -62,7 +64,7 @@ Double click the `setup.command`, the process is doing:
 - Watermark original photos with `name` value set in `_config.yml`
 - Traverse all folders and files, generate a file `_data/config.json`
 
-Run and greet your gallery in `http://localhost:4001`
+Run and greet your gallery in locally by [Jekyll](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
 ```
 $ jekyll serve --watch
 ```
@@ -75,22 +77,22 @@ $ git push -u origin gh-pages
 ```
 
 ## Make It Yours
-If you have run successfully locally, there are more details you can reform it.
+If you have run successfully locally, here are more details you can reform it.
 
 ### Default Settings
-Here are the default mode of Horcrux, almost all are set in `_config.yml`:
+Default mode of Horcrux, almost all config are set in `_config.yml`:
 - Sort the albums (folder under `photos`) by create time, from new to old.
 - Sort the photos by name.
 - When you change the `order` value in json under `_data`, and add new photo or new album, than double click `setup.command`, new `config.json` file will be generated, all old order set manually will be retained.
-- If you just modify `order` without new photo added, you just can double click `config.command`, which will read all the json files, and regenerate the `config.json` file.
-- Watermark original photo, with fontsize 40 and text is the value of `name`, in the middle of the bottom of the photo.
+- If you just modify `order` without new photo added, you can just double click `config.command`, which will read all json files (Horcrux.json and others under albums folder), and regenerate the `config.json` file.
+- Watermark original photo in the middle of the bottom of the photo, with fontsize 40, and text is the value of `name`,
 - In widescreen, photos divided into 3 columns.
 - In smallscreen, photos divided into 2 columns.
 
 ### Config
 
 ```yml
-name: Soyaine # Headline of the page, watermark text
+name: Horcrux # Headline of the page, watermark text
 
 frame_padding: 10px # the white gap between photo and outer border
 
