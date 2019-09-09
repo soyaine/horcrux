@@ -10,15 +10,15 @@
     "list": [
       {
         "type": "photo",
-        "width": 3845,
-        "height": 5767,
+        "width": 850,
+        "height": 1275,
         "path": "./photos/2019/August/Street/12.jpg",
         "min_path": "./photos/2019/August/Street/12.min.jpg"
       },
       {
         "type": "photo",
-        "width": 3607,
-        "height": 5410,
+        "width": 850,
+        "height": 1275,
         "path": "./photos/2019/August/Street/10.jpg",
         "min_path": "./photos/2019/August/Street/10.min.jpg"
       },
@@ -31,76 +31,76 @@
       },
       {
         "type": "photo",
-        "width": 4000,
-        "height": 6000,
+        "width": 850,
+        "height": 1276,
         "path": "./photos/2019/August/Street/07.jpg",
         "min_path": "./photos/2019/August/Street/07.min.jpg"
       },
       {
         "type": "photo",
-        "width": 4000,
-        "height": 6000,
+        "width": 850,
+        "height": 1276,
         "path": "./photos/2019/August/Street/05.jpg",
         "min_path": "./photos/2019/August/Street/05.min.jpg"
       },
       {
         "type": "photo",
-        "width": 4000,
-        "height": 6000,
+        "width": 850,
+        "height": 1275,
         "path": "./photos/2019/August/Street/04.jpg",
         "min_path": "./photos/2019/August/Street/04.min.jpg"
       }
     ]
   },
   {
-    "name": "Hokkaido \u00b7 December",
+    "name": "Hokkaido December",
     "type": "photos",
     "parents": [
       "2018",
-      "Hokkaido \u00b7 December"
+      "Hokkaido December"
     ],
     "list": [
       {
         "type": "photo",
-        "width": 4220,
-        "height": 2812,
-        "path": "./photos/2018/Hokkaido \u00b7 December/13.jpg",
-        "min_path": "./photos/2018/Hokkaido \u00b7 December/13.min.jpg"
+        "width": 1701,
+        "height": 1133,
+        "path": "./photos/2018/Hokkaido December/13.jpg",
+        "min_path": "./photos/2018/Hokkaido December/13.min.jpg"
       },
       {
         "type": "photo",
-        "width": 4378,
-        "height": 2530,
-        "path": "./photos/2018/Hokkaido \u00b7 December/08.jpg",
-        "min_path": "./photos/2018/Hokkaido \u00b7 December/08.min.jpg"
+        "width": 1701,
+        "height": 983,
+        "path": "./photos/2018/Hokkaido December/08.jpg",
+        "min_path": "./photos/2018/Hokkaido December/08.min.jpg"
       },
       {
         "type": "photo",
         "width": 4344,
         "height": 2897,
-        "path": "./photos/2018/Hokkaido \u00b7 December/07.jpg",
-        "min_path": "./photos/2018/Hokkaido \u00b7 December/07.min.jpg"
+        "path": "./photos/2018/Hokkaido December/07.jpg",
+        "min_path": "./photos/2018/Hokkaido December/07.min.jpg"
       },
       {
         "type": "photo",
-        "width": 4898,
-        "height": 3265,
-        "path": "./photos/2018/Hokkaido \u00b7 December/05.jpg",
-        "min_path": "./photos/2018/Hokkaido \u00b7 December/05.min.jpg"
+        "width": 1701,
+        "height": 1134,
+        "path": "./photos/2018/Hokkaido December/05.jpg",
+        "min_path": "./photos/2018/Hokkaido December/05.min.jpg"
       },
       {
         "type": "photo",
         "width": 4806,
         "height": 3201,
-        "path": "./photos/2018/Hokkaido \u00b7 December/04.jpg",
-        "min_path": "./photos/2018/Hokkaido \u00b7 December/04.min.jpg"
+        "path": "./photos/2018/Hokkaido December/04.jpg",
+        "min_path": "./photos/2018/Hokkaido December/04.min.jpg"
       },
       {
         "type": "photo",
-        "width": 4924,
-        "height": 3249,
-        "path": "./photos/2018/Hokkaido \u00b7 December/01.jpg",
-        "min_path": "./photos/2018/Hokkaido \u00b7 December/01.min.jpg"
+        "width": 1701,
+        "height": 1122,
+        "path": "./photos/2018/Hokkaido December/01.jpg",
+        "min_path": "./photos/2018/Hokkaido December/01.min.jpg"
       }
     ]
   }

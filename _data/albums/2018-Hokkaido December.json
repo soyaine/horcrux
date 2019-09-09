@@ -1,0 +1,54 @@
+{
+  "order": [
+    "13.jpg",
+    "08.jpg",
+    "07.jpg",
+    "05.jpg",
+    "04.jpg",
+    "01.jpg"
+  ],
+  "dict": {
+    "13.jpg": {
+      "type": "photo",
+      "width": 1701,
+      "height": 1133,
+      "path": "./photos/2018/Hokkaido December/13.jpg",
+      "min_path": "./photos/2018/Hokkaido December/13.min.jpg"
+    },
+    "08.jpg": {
+      "type": "photo",
+      "width": 1701,
+      "height": 983,
+      "path": "./photos/2018/Hokkaido December/08.jpg",
+      "min_path": "./photos/2018/Hokkaido December/08.min.jpg"
+    },
+    "07.jpg": {
+      "type": "photo",
+      "width": 4344,
+      "height": 2897,
+      "path": "./photos/2018/Hokkaido December/07.jpg",
+      "min_path": "./photos/2018/Hokkaido December/07.min.jpg"
+    },
+    "05.jpg": {
+      "type": "photo",
+      "width": 1701,
+      "height": 1134,
+      "path": "./photos/2018/Hokkaido December/05.jpg",
+      "min_path": "./photos/2018/Hokkaido December/05.min.jpg"
+    },
+    "04.jpg": {
+      "type": "photo",
+      "width": 4806,
+      "height": 3201,
+      "path": "./photos/2018/Hokkaido December/04.jpg",
+      "min_path": "./photos/2018/Hokkaido December/04.min.jpg"
+    },
+    "01.jpg": {
+      "type": "photo",
+      "width": 1701,
+      "height": 1122,
+      "path": "./photos/2018/Hokkaido December/01.jpg",
+      "min_path": "./photos/2018/Hokkaido December/01.min.jpg"
+    }
+  }
+}

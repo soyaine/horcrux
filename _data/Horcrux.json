@@ -18,18 +18,18 @@
         ],
         "items": {
           "order": [
-            "Hokkaido \u00b7 December"
+            "Hokkaido December"
           ],
           "dict": {
-            "Hokkaido \u00b7 December": {
-              "name": "Hokkaido \u00b7 December",
+            "Hokkaido December": {
+              "name": "Hokkaido December",
               "type": "album",
               "root": 2,
               "parents": [
                 "2018",
-                "Hokkaido \u00b7 December"
+                "Hokkaido December"
               ],
-              "path": "./_data/albums/2018-Hokkaido \u00b7 December.json",
+              "path": "./_data/albums/2018-Hokkaido December.json",
               "no_sub_album": true
             }
           }
