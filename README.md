@@ -186,7 +186,7 @@ $link: #98A3AA;
 ## Acknowledgments
 The idea of generating album JSON for using Jekyll and GitHub Pages is inspired by andyzhang's [gallery](https://github.com/andyzg/gallery).
 
-Special thanks to my friend [Hugo](https://github.com/xcc3641) <img src="https://avatars2.githubusercontent.com/u/11666634?s=460&v=4" width="20" height="20">, the photographs both in the mockup above and in the live demo were taken by him. In the beginning, I just want to write a tool for him to share photography. Later I found it can be open sourced. So there is Horcrux, he named it.
+Special thanks to my friend [Hugo <img src="https://avatars2.githubusercontent.com/u/11666634?s=460&v=4" width="20" height="20">](https://github.com/xcc3641), the photographs both in the mockup above and in the live demo were taken by him. In the beginning, I just want to write a tool for him to share photography. Later I found it can be open sourced. So there is Horcrux, he named it.
 
 ## Author
 © [Soyaine](https://github.com/soyaine)
