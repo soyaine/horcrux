@@ -1,0 +1,54 @@
+{
+  "order": [
+    "12.jpg",
+    "10.jpg",
+    "08.jpg",
+    "07.jpg",
+    "05.jpg",
+    "04.jpg"
+  ],
+  "dict": {
+    "12.jpg": {
+      "type": "photo",
+      "width": 3845,
+      "height": 5767,
+      "path": "./photos/2019/August/Street/12.jpg",
+      "min_path": "./photos/2019/August/Street/12.min.jpg"
+    },
+    "10.jpg": {
+      "type": "photo",
+      "width": 3607,
+      "height": 5410,
+      "path": "./photos/2019/August/Street/10.jpg",
+      "min_path": "./photos/2019/August/Street/10.min.jpg"
+    },
+    "08.jpg": {
+      "type": "photo",
+      "width": 3393,
+      "height": 5089,
+      "path": "./photos/2019/August/Street/08.jpg",
+      "min_path": "./photos/2019/August/Street/08.min.jpg"
+    },
+    "07.jpg": {
+      "type": "photo",
+      "width": 4000,
+      "height": 6000,
+      "path": "./photos/2019/August/Street/07.jpg",
+      "min_path": "./photos/2019/August/Street/07.min.jpg"
+    },
+    "05.jpg": {
+      "type": "photo",
+      "width": 4000,
+      "height": 6000,
+      "path": "./photos/2019/August/Street/05.jpg",
+      "min_path": "./photos/2019/August/Street/05.min.jpg"
+    },
+    "04.jpg": {
+      "type": "photo",
+      "width": 4000,
+      "height": 6000,
+      "path": "./photos/2019/August/Street/04.jpg",
+      "min_path": "./photos/2019/August/Street/04.min.jpg"
+    }
+  }
+}

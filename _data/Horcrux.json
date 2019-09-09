@@ -5,40 +5,78 @@
   "parents": [],
   "items": {
     "order": [
-      "Duo",
-      "Mey",
-      "Dark"
+      "2019",
+      "2018"
     ],
     "dict": {
-      "Mey": {
-        "name": "Mey",
+      "2018": {
+        "name": "2018",
         "type": "album",
         "root": 1,
         "parents": [
-          "Mey"
+          "2018"
         ],
-        "path": "./_data/albums/Mey.json",
-        "no_sub_album": true
+        "items": {
+          "order": [
+            "Hokkaido \u00b7 December"
+          ],
+          "dict": {
+            "Hokkaido \u00b7 December": {
+              "name": "Hokkaido \u00b7 December",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "2018",
+                "Hokkaido \u00b7 December"
+              ],
+              "path": "./_data/albums/2018-Hokkaido \u00b7 December.json",
+              "no_sub_album": true
+            }
+          }
+        }
       },
-      "Duo": {
-        "name": "Duo",
+      "2019": {
+        "name": "2019",
         "type": "album",
         "root": 1,
         "parents": [
-          "Duo"
+          "2019"
         ],
-        "path": "./_data/albums/Duo.json",
-        "no_sub_album": true
-      },
-      "Dark": {
-        "name": "Dark",
-        "type": "album",
-        "root": 1,
-        "parents": [
-          "Dark"
-        ],
-        "path": "./_data/albums/Dark.json",
-        "no_sub_album": true
+        "items": {
+          "order": [
+            "August"
+          ],
+          "dict": {
+            "August": {
+              "name": "August",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "2019",
+                "August"
+              ],
+              "items": {
+                "order": [
+                  "Street"
+                ],
+                "dict": {
+                  "Street": {
+                    "name": "Street",
+                    "type": "album",
+                    "root": 3,
+                    "parents": [
+                      "2019",
+                      "August",
+                      "Street"
+                    ],
+                    "path": "./_data/albums/2019-August-Street.json",
+                    "no_sub_album": true
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

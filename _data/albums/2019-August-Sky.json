@@ -1,0 +1,54 @@
+{
+  "order": [
+    "sky-09.jpg",
+    "sky-07.jpg",
+    "sky-02.jpg",
+    "sky-06.jpg",
+    "sky-05.jpg",
+    "sky-04.jpg"
+  ],
+  "dict": {
+    "sky-09.jpg": {
+      "type": "photo",
+      "width": 4898,
+      "height": 3265,
+      "path": "./photos/2019/August/Sky/sky-09.jpg",
+      "min_path": "./photos/2019/August/Sky/sky-09.min.jpg"
+    },
+    "sky-07.jpg": {
+      "type": "photo",
+      "width": 5833,
+      "height": 3889,
+      "path": "./photos/2019/August/Sky/sky-07.jpg",
+      "min_path": "./photos/2019/August/Sky/sky-07.min.jpg"
+    },
+    "sky-06.jpg": {
+      "type": "photo",
+      "width": 3265,
+      "height": 4898,
+      "path": "./photos/2019/August/Sky/sky-06.jpg",
+      "min_path": "./photos/2019/August/Sky/sky-06.min.jpg"
+    },
+    "sky-05.jpg": {
+      "type": "photo",
+      "width": 4000,
+      "height": 6000,
+      "path": "./photos/2019/August/Sky/sky-05.jpg",
+      "min_path": "./photos/2019/August/Sky/sky-05.min.jpg"
+    },
+    "sky-04.jpg": {
+      "type": "photo",
+      "width": 4000,
+      "height": 6000,
+      "path": "./photos/2019/August/Sky/sky-04.jpg",
+      "min_path": "./photos/2019/August/Sky/sky-04.min.jpg"
+    },
+    "sky-02.jpg": {
+      "type": "photo",
+      "width": 6000,
+      "height": 4000,
+      "path": "./photos/2019/August/Sky/sky-02.jpg",
+      "min_path": "./photos/2019/August/Sky/sky-02.min.jpg"
+    }
+  }
+}
