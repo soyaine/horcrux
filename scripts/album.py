@@ -83,6 +83,6 @@ class Album():
 
             return {
               **result,
-              'path': './' + str(album_path.relative_to(conf.REPO_DIR)),
+              'path': './' + str(album_path.relative_to(conf.DIR_PATH)),
               'no_sub_album': True
             }

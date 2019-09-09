@@ -46,7 +46,7 @@ class Photo():
                 min_image.thumbnail(new_image_size, Image.ANTIALIAS)
                 self.save_image(min_image, self.min_path)
 
-        relative_path = str(self.path.relative_to(conf.REPO_DIR))
+        relative_path = str(self.path.relative_to(conf.DIR_PATH))
 
         # return basic info
         return {
@@ -54,7 +54,7 @@ class Photo():
           'width': self.size[0],
           'height': self.size[1],
           'path': './' + relative_path,
-          'min_path': './' + str(self.min_path.relative_to(conf.REPO_DIR))
+          'min_path': './' + str(self.min_path.relative_to(conf.DIR_PATH))
         }
     
     def save_image(self, img, path):
