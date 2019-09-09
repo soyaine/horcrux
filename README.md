@@ -140,7 +140,7 @@ process:
 - The text of the watermark is the value of `name`.
 - Position is in the middle of the bottom of the photo.
 
-**Gallery Style**
+### Gallery Style
 
 ```yml
 frame_padding: 10px # the white gap between photo and outer border
@@ -166,7 +166,7 @@ small_screen:
 - In widescreen, the spacing between columns is 30px, the same for rows.
 - In smallscreen, the spacing between columns is 10px, the same for rows.
 
-**Color Palette**
+### Color Palette
 
 Most of the color palette is defined in `./sass/base.scss`, you can change them to your color.
 
@@ -186,7 +186,7 @@ $link: #98A3AA;
 ## Acknowledgments
 The idea of generating album JSON for using Jekyll and GitHub Pages is inspired by andyzhang's [gallery](https://github.com/andyzg/gallery).
 
-Special thanks to my friend [Hugo](https://github.com/xcc3641), the photographs both in the mockup above and in the live demo were taken by him. In the beginning, I just want to write a tool for him to share photography. Later I found it can be open sourced. So there is Horcrux, he named it.
+Special thanks to my friend [Hugo](https://github.com/xcc3641) <img src="https://avatars2.githubusercontent.com/u/11666634?s=460&v=4" style="height: 16px">, the photographs both in the mockup above and in the live demo were taken by him. In the beginning, I just want to write a tool for him to share photography. Later I found it can be open sourced. So there is Horcrux, he named it.
 
 ## Author
 © [Soyaine](https://github.com/soyaine)
