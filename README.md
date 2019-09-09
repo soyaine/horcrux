@@ -132,7 +132,7 @@ process:
 
 **`separator`:**
 - If you created nested folders under the `photos` folder, Horcrux can handle it too.
-- The album which path in `./photos/2019/duo/`, its displayed title in page will be: **DUO** · 2019, spliced by `separator` ` · `.
+- The album which path in `./photos/2019/duo/`, its displayed title in page will be: **DUO** · 2019, spliced by `separator` ` · `.
 
 
 **`watermark`:**
@@ -170,9 +170,6 @@ small_screen:
 
 Most of the color palette is defined in `./sass/base.scss`, you can change them to your color.
 
-- `$background`: whole page's background color
-- `$surface`: the color of photo square frame
-
 ```scss
 $background: #fafafa;
 $surface: #fff;
@@ -183,9 +180,13 @@ $text: #C8C8C8;
 $link: #98A3AA;
 ```
 
+- `$background`: whole page's background color
+- `$surface`: the color of photo square frame
+
 ## Acknowledgments
-- Inspired by andyzhang's [gallery](https://github.com/andyzg/gallery)
-- Special thanks to my friend [Hugo](https://github.com/xcc3641), the photographs both in the mockup above and in the live demo were taken by him. He is the reason why I write Horcurx (also named by him), and also, the first user of it.
+The idea of generating album JSON for using Jekyll and GitHub Pages is inspired by andyzhang's [gallery](https://github.com/andyzg/gallery).
+
+Special thanks to my friend [Hugo](https://github.com/xcc3641), the photographs both in the mockup above and in the live demo were taken by him. In the beginning, I just want to write a tool for him to share photography. Later I found it can be open sourced. So there is Horcrux, he named it.
 
 ## Author
 © [Soyaine](https://github.com/soyaine)
