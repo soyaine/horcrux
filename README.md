@@ -9,6 +9,7 @@ Generate your own online photograph gallery easily.
 - Auto generate thumbnails for better load speed.
 - Sort photos by time, modify as you like, and keep it when you add new photos.
 - Keep the order when you put new photos in.
+- Support multi level albums.
 - Based on Jekyll and GitHub Pages.
 
 ## Demo
@@ -45,14 +46,19 @@ instagram: your_ins_account_id
 Remove all resources under `./photos/`, then create folder in it, the folder name will shown as headline of a group of photos. Copy some photos into it. 
 ```bash
 photos
-├── Duo
-│   ├── 07.jpg
-│   ├── 08.jpg
-│   ├── 09.jpg
+├── 2019
+│    ├── Duo
+│    │   ├── 07.jpg
+│    │   ├── 08.jpg
+│    │   ├── 09.jpg
+│    └── Hey
+│        ├── 02.jpg
+│        └── 1.jpg
 └── Mey
     ├── 02.jpg
     └── 1.jpg
 ```
+
 > **⚠️NOTE** 
 > 
 > Please always keep your own original photo files in other place, because the watermark will change the original one. 
@@ -77,39 +83,27 @@ $ git push -u origin gh-pages
 ```
 
 ## Make It Yours
-If you have run successfully locally, here are more details you can reform it.
+If you have run successfully locally, here are more details you can reform it. The follow is the default settings of Horcrux, almost all config are set in `_config.yml`:
 
-### Default Settings
-Default mode of Horcrux, almost all config are set in `_config.yml`:
-- Sort the albums (folder under `photos`) by create time, from new to old.
-- Sort the photos by name.
-- When you change the `order` value in json under `_data`, and add new photo or new album, than double click `setup.command`, new `config.json` file will be generated, all old order set manually will be retained.
-- If you just modify `order` without new photo added, you can just double click `config.command`, which will read all json files (Horcrux.json and others under albums folder), and regenerate the `config.json` file.
-- Watermark original photo in the middle of the bottom of the photo, with fontsize 40, and text is the value of `name`,
-- In widescreen, photos divided into 3 columns.
-- In smallscreen, photos divided into 2 columns.
-
-### Config
+### Headline and Instagram Link
 
 ```yml
 name: Horcrux # Headline of the page, watermark text
 
-frame_padding: 10px # the white gap between photo and outer border
+instagram: ins_id
+```
 
-# Widescreen
-column: 3 
-column_gap: 30px
-row_gap: 30px
+- The value of `name` is both the website headline, and the watermark text.
+- There is a text link to your instagram page at the bottom of the page, just set it blank if you don't want.
 
-# Smallscreen
-small_screen:
-  column: 2
-  column_gap: 10px
-  row_gap: 10px
+### Albums and photos process
 
+```yml
 # How to process the photos and albums to config
 process:
   keep_order: True
+  nested_album:
+    separator: ' · '
   album:
     sort_by_time: True # False: sort by filename
     order_by: create # other two value can be: access, modify
@@ -125,10 +119,69 @@ process:
       fontsize: 40
       fontfamily: Eczar-Medium.ttf
       rotate: 0
-
-instagram:   # if you don't want show the instagram link below page, just set it blank
 ```
 
+**`sort_by_time`, `order_by`, `reverse`:**
+
+- Sort the albums (folder under `photos`) by create time, from new to old.
+- Sort the photos by name.
+
+**`keep_order`:**
+- When you change the `order` value in json under `_data`, and add new photo or new album, than double click `setup.command`, new `config.json` file will be generated, all old order set manually will be retained.
+- If you just modify `order` without new photo added, you can just double click `config.command`, which will read all json files (Horcrux.json and others under albums folder), and regenerate the `config.json` file.
+
+**`separator`:**
+- If you created nested folders under the `photos` folder, Horcrux can handle it too.
+- The album which path in `./photos/2019/duo/`, its displayed title in page will be: **DUO** · 2019, spliced by `separator` ` · `.
+
+
+**`watermark`:**
+- Watermark the original photos.
+- The text of the watermark is the value of `name`.
+- Position is in the middle of the bottom of the photo.
+
+**Gallery Style**
+
+```yml
+frame_padding: 10px # the white gap between photo and outer border
+
+# Widescreen
+column: 3 
+column_gap: 30px
+row_gap: 30px
+
+# Smallscreen
+small_screen:
+  column: 2
+  column_gap: 10px
+  row_gap: 10px
+```
+
+**`column`:**
+- In widescreen, photos divided into 3 columns.
+- In smallscreen, photos divided into 2 columns.
+
+**`frame_padding`, `column_gap`, `row_gap`:**
+- Each photo has a white square frame background. The white gap bewtween photo and frame outer border is 10px.
+- In widescreen, the spacing between columns is 30px, the same for rows.
+- In smallscreen, the spacing between columns is 10px, the same for rows.
+
+**Color Palette**
+
+Most of the color palette is defined in `./sass/base.scss`, you can change them to your color.
+
+- `$background`: whole page's background color
+- `$surface`: the color of photo square frame
+
+```scss
+$background: #fafafa;
+$surface: #fff;
+
+$title: #5f5f5f;
+$subtitle: #868686;
+$text: #C8C8C8;
+$link: #98A3AA;
+```
 
 ## Acknowledgments
 - Inspired by andyzhang's [gallery](https://github.com/andyzg/gallery)
