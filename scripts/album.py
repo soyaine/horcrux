@@ -1,5 +1,5 @@
 from photo import Photo
-import json, conf, imghdr
+import json, conf
 
 class Album():
     def __init__(self, path, name, root):
@@ -46,9 +46,9 @@ class Album():
         for i, path in enumerate(dirs):
             if path.is_dir():
                 album_list.append(path)
-            elif imghdr.what(path):
+            elif str(path.suffix).endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif')):
                 photo_list.append(path)
-        
+                
         photo_list = self.sort_dirs(photo_list, 'photo')
         album_list = self.sort_dirs(album_list, 'album')
 
