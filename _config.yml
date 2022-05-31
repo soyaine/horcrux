@@ -2,7 +2,7 @@ name: Horcrux
 
 frame_padding: 10px
 
-column: 3
+column: 4
 column_gap: 30px
 row_gap: 30px
 
