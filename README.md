@@ -194,7 +194,5 @@ Special thanks to my friend [Hugo <img src="https://avatars2.githubusercontent.c
 ## Support
 If you have any question about Horcrux, feel free to start an [issue](https://github.com/soyaine/horcrux/issues/new). 
 
-You can also reach out to me by email [soyaine1@gmail.com](mailto:soyaine1@gmail.com)
-
 ## License
 MIT
